@@ -1,26 +1,33 @@
 
 import { useContext, useState } from "react";
 import { ApiContext } from "../contexts/ApiProvider";
+import { PlayerDataContext } from "../contexts/PlayerDataProvider";
 
 export function PlayerSearchForm(){
     let apiUrlBase = useContext(ApiContext);
+    let profileData = useContext(PlayerDataContext);
+    // let {profile, setProfile} = useContext(PlayerDataContext);
     // input field as a variable, react has to control the variable
-    let [searchData, setSearchData] = useState();
-
+    let [searchData, setSearchData] = useState(14856);
 
     const searchForPlayer = async () => {
         // console.log(`API URL is: ${apiUrlBase}`);
-        let response = await fetch(apiUrlBase + "sports/football/leagues/nfl/" + searchData)
+        let response = await fetch(apiUrlBase + "athletes/" + searchData);
+        let data = await response.json();
+        // setProfile(profile, data)
+        profileData.push(data);
+        
     }
     
     return (
         <div>
             <h5>Enter a Players name</h5>
             <input 
-            type="text" 
-            id="playerName"
-            value={searchData}
-            onChnage={event => setSearchData(event.target.value)} 
+                type="text"
+                name="playerName"
+                id="playerName"
+                value={searchData}
+                onChange={event => setSearchData(event.target.value)} 
             />
             <button onClick={searchForPlayer} type="submit">Search</button>
         </div>
