@@ -5,8 +5,9 @@ import { PlayerDataContext } from "../contexts/PlayerDataProvider";
 
 export function PlayerSearchForm(){
     let {url} = useContext(ApiContext);
-    let profileData = useContext(PlayerDataContext);
-    // let {profile, setProfile} = useContext(PlayerDataContext);
+    // let playerData = useContext(PlayerDataContext)
+    let {player, setPlayer} = useContext(PlayerDataContext);
+    
     // input field as a variable, react has to control the variable
     let [searchData, setSearchData] = useState(14856);
 
@@ -14,9 +15,8 @@ export function PlayerSearchForm(){
         // console.log(`API URL is: ${apiUrlBase}`);
         let response = await fetch(url + "athletes/" + searchData);
         let data = await response.json();
-        // setProfile(profile, data)
-        profileData.push(data);
-        
+        // playerData.push(data);
+        setPlayer([...player, data]);
     }
 
     return (

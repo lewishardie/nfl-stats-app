@@ -1,6 +1,7 @@
 import './App.css';
 
 import { PlayerSearchForm } from './components/PlayerSearchForm';
+import ProfileDisplay from './components/ProfileDisplay';
 
 function App() {
 
@@ -9,6 +10,8 @@ function App() {
 
       <h1>NFL stats APP</h1>
       <PlayerSearchForm/>
+      
+      <ProfileDisplay />
 
 
       {/* <h1>{apiUrl}</h1> */}
