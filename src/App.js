@@ -1,9 +1,8 @@
 import './App.css';
+
 import { PlayerSearchForm } from './components/PlayerSearchForm';
 
 function App() {
-
-  // let apiUrl = useContext(ApiContext)
 
   return (
     <div className="App">
