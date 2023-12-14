@@ -66,6 +66,9 @@ code {
 
 }
 
-.nav ul li a: note {
+/* Player Profile */
+
+.playerProfile {
+  background-color: lightcyan;
 
 }

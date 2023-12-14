@@ -6,17 +6,16 @@ import { PlayerDataContext } from "../contexts/PlayerDataProvider";
 export function PlayerSearchForm(){
     let {url} = useContext(ApiContext);
     // let playerData = useContext(PlayerDataContext)
-    let {player, setPlayer} = useContext(PlayerDataContext);
+    let {setPlayer} = useContext(PlayerDataContext);
     
     // input field as a variable, react has to control the variable
     let [searchData, setSearchData] = useState("14876");
 
     const searchForPlayer = async () => {
-        // console.log(`API URL is: ${apiUrlBase}`);
         let response = await fetch(url + "athletes/" + searchData);
         let data = await response.json();
-        // playerData.push(data);
-        setPlayer([...player, data]);
+        // renders one player profile
+        setPlayer([data]);
     }
 
     return (
@@ -36,3 +35,16 @@ export function PlayerSearchForm(){
         </div>
     )
 }
+
+// let fetchData = async () => {
+//     let randomPokemonNumber = Math.floor(Math.random() * 1017) + 1;
+//     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonNumber}`);
+//     let data = await response.json();
+//     // setPokemon({name: data.name})
+//     setPokemon(data);
+// };
+
+
+// function getPokemon(){
+// fetchData();
+// };

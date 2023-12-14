@@ -1,12 +1,15 @@
 import './App.css';
 
-import Navbar from './components/NavBar';
-
 import { Routes, Route } from 'react-router-dom';
-import { PlayerSearchForm } from './components/PlayerSearchForm';
-import ProfileDisplay from './components/ProfileDisplay';
+
+
+import Navbar from './components/NavBar';
 import PlayerProfile from './pages/PlayerProfile';
-// import { BrowserRouter, NavLink, Routes } from 'react-router-dom';
+import Teams from './pages/Teams';
+import Scoreboard from './pages/Scoreboard';
+import Home from './pages/Home';
+
+
 
 function App() {
 
@@ -16,10 +19,10 @@ function App() {
       <Navbar />
       <div className="container">
       <Routes>
-        {/* <Route path="/" element={<PlayerSearchForm/>} /> */}
+        <Route path="/" element={<Home/>} />
         <Route path="/players" element={<PlayerProfile/>} />
-        {/* <Route path="/teams" element={<PlayerSearchForm/>} />
-        <Route path="/scoreboard" element={<PlayerSearchForm/>} /> */}
+        <Route path="/teams" element={<Teams/>} />
+        <Route path="/scoreboard" element={<Scoreboard/>} />
       </Routes>
       </div>
       

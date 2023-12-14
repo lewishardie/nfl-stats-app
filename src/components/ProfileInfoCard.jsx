@@ -8,6 +8,7 @@ export default function ProfileInfoCard(props) {
         <div className="profileInfoCard">
             <div>
             <h1>{props.name}</h1>
+            <h1>{props.id}</h1>
             <h2>{props.jersey}</h2>
             <img src={props.imgUrl} alt="default"/>
             </div>

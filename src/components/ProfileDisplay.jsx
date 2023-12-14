@@ -16,7 +16,7 @@ export default function ProfileDisplay() {
     }, [player]);
 
     return(
-        <div id="playerProfile">
+        <div id="profileDisplay">
             {player.map((element, index) => {
                 return <ProfileInfoCard
                     key={element.displayName + index}
