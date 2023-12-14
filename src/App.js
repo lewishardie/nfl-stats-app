@@ -5,6 +5,7 @@ import Navbar from './components/NavBar';
 import { Routes, Route } from 'react-router-dom';
 import { PlayerSearchForm } from './components/PlayerSearchForm';
 import ProfileDisplay from './components/ProfileDisplay';
+import PlayerProfile from './pages/PlayerProfile';
 // import { BrowserRouter, NavLink, Routes } from 'react-router-dom';
 
 function App() {
@@ -16,13 +17,13 @@ function App() {
       <div className="container">
       <Routes>
         {/* <Route path="/" element={<PlayerSearchForm/>} /> */}
-        <Route path="/players" element={<PlayerSearchForm/>} />
+        <Route path="/players" element={<PlayerProfile/>} />
         {/* <Route path="/teams" element={<PlayerSearchForm/>} />
         <Route path="/scoreboard" element={<PlayerSearchForm/>} /> */}
       </Routes>
       </div>
       
-      <ProfileDisplay />
+      {/* <ProfileDisplay /> */}
 
     </div>
   );
