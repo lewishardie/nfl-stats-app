@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#playerProfile {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.profileInfoCard {
+
+  max-width: 80dvw;
+  min-width: 15dvw;
+
+}
+
+.profileInfoCard > img {
+  max-width: 40%;
+
+}
+
+
+/* Navigation */
+
+.nav {
+  background-color: rgb(246, 218, 246);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.nav ul {
+  display: flex;
+
+}
+
+.nav ul li {
+  list-style: none;
+
+}
+
+.nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.active {
+  background-color: lawngreen;
+
+}
+
+.nav ul li a: note {
+
+}

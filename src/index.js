@@ -7,16 +7,20 @@ import reportWebVitals from './reportWebVitals';
 import { ApiProvider } from './contexts/ApiProvider';
 import { PlayerDataProvider } from './contexts/PlayerDataProvider';
 
+import { BrowserRouter } from 'react-router-dom';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ApiProvider>
-      <PlayerDataProvider>
+    <BrowserRouter>
+      <ApiProvider>
+        <PlayerDataProvider>
 
-      <App />
+        <App />
 
-      </PlayerDataProvider>
-    </ApiProvider>
+        </PlayerDataProvider>
+      </ApiProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

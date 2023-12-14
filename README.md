@@ -58,9 +58,12 @@ http://site.api.espn.com/apis/site/v2/sports/football/nfl/
 
 #### Scores
 http://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard
+https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard
 
 #### All Teams
 http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams
+
+
 
 #### Specific Team
 http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/:team

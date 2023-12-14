@@ -9,7 +9,7 @@ export function PlayerSearchForm(){
     let {player, setPlayer} = useContext(PlayerDataContext);
     
     // input field as a variable, react has to control the variable
-    let [searchData, setSearchData] = useState(14856);
+    let [searchData, setSearchData] = useState("14876");
 
     const searchForPlayer = async () => {
         // console.log(`API URL is: ${apiUrlBase}`);
@@ -30,6 +30,9 @@ export function PlayerSearchForm(){
                 onChange={event => setSearchData(event.target.value)} 
             />
             <button onClick={searchForPlayer} type="submit">Search</button>
+            <div className="dropdown">
+
+            </div>
         </div>
     )
 }
