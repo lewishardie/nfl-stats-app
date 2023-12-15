@@ -8,6 +8,7 @@ import { ApiProvider } from './contexts/ApiProvider';
 import { PlayerDataProvider } from './contexts/PlayerDataProvider';
 
 import { BrowserRouter } from 'react-router-dom';
+import { StandingsDataProvider } from './contexts/StandingsDataProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,9 +16,12 @@ root.render(
     <BrowserRouter>
       <ApiProvider>
         <PlayerDataProvider>
+        <StandingsDataProvider>
+
 
         <App />
 
+        </StandingsDataProvider>
         </PlayerDataProvider>
       </ApiProvider>
     </BrowserRouter>

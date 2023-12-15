@@ -10,6 +10,7 @@ export default function PlayerProfile(props) {
 
             <PlayerSearchForm />
             <ProfileDisplay />
+    
 
         </div>
 
