@@ -67,3 +67,19 @@ http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams
 
 #### Specific Team
 http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/:team
+
+
+### Reflections
+
+#### Issues
+
+ - 
+
+#### Going Forward
+
+- Explore CORS and implementation
+    - https://sports.core.api.espn.com/v3/sports/football/nfl/athletes?limit=1000
+
+- Look into pulling playerName : playerId into a local json file or localstorage to help the player search function
+
+- Current Standings and current standings info card can be modulised for better 
