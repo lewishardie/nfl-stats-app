@@ -1,12 +1,12 @@
-// import { CurrentStandings } from "../components/CurrentStandings";
+import { CurrentStandings } from "../components/CurrentStandings";
 
-// // export default function Standings(props) {
+export default function Standings(props) {
 
 
-// //     return(
-// //         <div className="standings">
-// //             <h1>Standings</h1>
-//                 <CurrentStandings/>
-// //         </div>
-// //     )
-// // }
+    return(
+        <div className="standings">
+            <h1>Standings</h1>
+                <CurrentStandings/>
+        </div>
+    )
+}

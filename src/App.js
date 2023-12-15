@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import PlayerProfile from './pages/PlayerProfile';
 import Teams from './pages/Teams';
-import Scoreboard from './pages/Scoreboard';
+import Standings from './pages/Standings';
 import Home from './pages/Home';
 
 
@@ -22,7 +22,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/players" element={<PlayerProfile/>} />
         <Route path="/teams" element={<Teams/>} />
-        <Route path="/scoreboard" element={<Scoreboard/>} />
+        <Route path="/standings" element={<Standings />} />
       </Routes>
       </div>
       
@@ -33,48 +33,3 @@ function App() {
 }
 
 export default App;
-
-
-// {/* <Routes>
-// <Route path='/' element={<HomePage />} />
-// {/* This works, but there can be tedious when there are many nested routes
-
-// <Route path='/about' element={<AboutPage />} />
-// <Route path='/about/contact' element={<ContactPage />} /> 
-
-// Better alternatives available
-// */}
-// <Route path='/about' element={<Outlet />}>
-//   <Route index element={<AboutPage />} />
-//   <Route path='contact' element={<ContactPage />} />
-
-// </Route>
-// <Route path='/cards' element={<BusinessCardPage />} />
-// <Route path='/pokemon' element={<PokemonFetcherPage />} />
-// </Routes> */}
-
-
-
-// import { BrowserRouter, NavLink, Routes, Route } from 'react-router-dom';
-
-//   return (
-//     <div className="App">
-//       {message && <h1>{message}</h1>}
-//       <BrowserRouter>
-//         <ul>
-//           <li>
-//             <NavLink to='/leagues/12345/team_1'>Page 1</NavLink>
-//           </li>
-//           <li>
-//             <NavLink to='/2/4/8'>Page 2</NavLink>
-//           </li>
-//         </ul>
-//         <Routes>
-//           <Route path="/:banana/:id/:potato" element={<NumberGrabber/>} />
-//         </Routes>
-//       </BrowserRouter>
-//     </div>
-//   );
-// }
-
-// export default App;

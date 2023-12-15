@@ -1,7 +1,6 @@
 import { useContext, useEffect} from "react";
 import { StandingsDataContext } from "../contexts/StandingsDataProvider";
 import CurrentStandingsInfoCard from "./CurrentStandingsInfoCard";
-// import Conference from "./Conference";
 import { ApiContext } from "../contexts/ApiProvider";
 
 export function CurrentStandings(){
@@ -26,8 +25,6 @@ export function CurrentStandings(){
         // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [])
 
-    // const { }
-    //-- html content with if, else   
     return(
         // <div id="standings">
         //     {standings.map((conference, index) => (
@@ -47,9 +44,11 @@ export function CurrentStandings(){
                             neLosses={element.children[0].standings.entries[0].stats[3].displayValue}
                             neSeed={element.children[0].standings.entries[0].stats[4].displayValue}
                         bal={element.children[0].standings.entries[1].team.displayName}
+                            balImg={element.children[0].standings.entries[1].team.logos[0].href}
                         mia={element.children[0].standings.entries[2].team.displayName}
+                            miaImg={element.children[0].standings.entries[2].team.logos[0].href}
 
-                    nfc={element.children[1].forAll}
+                    nfc={element.children[1].name}
                 />
             })}
 

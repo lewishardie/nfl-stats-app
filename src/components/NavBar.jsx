@@ -15,7 +15,7 @@ export default function Navbar() {
                     <NavLink to ='/teams' style={({isActive}) => isActive ? {color: "red"} : undefined }>Teams</NavLink>
                 </li>
                 <li>
-                    <NavLink to ='/scoreboard' style={({isActive}) => isActive ? {color: "red"} : undefined }>Scoreboard</NavLink>
+                    <NavLink to ='/standings' style={({isActive}) => isActive ? {color: "red"} : undefined }>Standings</NavLink>
                 </li>
             </ul>
         </nav>

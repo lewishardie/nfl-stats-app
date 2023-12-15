@@ -23,7 +23,6 @@ export default function ProfileDisplay() {
                     id={element.id}
                     name={element.displayName}
                     imgUrl={element.headshot.href}
-                    // stats={element.statistics.{id}.}
                     team={element.team.href}
                     position={element.position.name}
                     jersey={element.jersey}
