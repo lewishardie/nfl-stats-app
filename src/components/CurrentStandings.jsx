@@ -26,11 +26,7 @@ export function CurrentStandings(){
         }, [])
 
     return(
-        // <div id="standings">
-        //     {standings.map((conference, index) => (
-        //     <Conference key={index} conference={conference} />
-        //     ))}
-        // </div>
+
         <div id="standings">
             {standings.map((element) => {
                 return <CurrentStandingsInfoCard

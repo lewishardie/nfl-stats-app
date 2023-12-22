@@ -8,9 +8,12 @@ export function PlayerSearchForm(){
     let {setPlayer} = useContext(PlayerDataContext);
     
     // input field as a variable, react has to control the variable
-    let [searchData, setSearchData] = useState("14876");
+    let [searchData, setSearchData] = useState("Ryan Tannehill");
+
+    // https://sports.core.api.espn.com/v3/sports/football/nfl/athletes?limit=20000
 
     const searchForPlayer = async () => {
+        // let response = await fetch(url.playerApi);
         let response = await fetch(url.playerApi + "leagues/nfl/athletes/" + searchData);
         let data = await response.json();
         // renders one player profile
